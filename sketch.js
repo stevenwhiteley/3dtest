@@ -27,7 +27,7 @@ function setup() {
 //   } else {
 //     song.play();
 
-//   	}
+//    }
 //   }
 
 function draw() {
@@ -48,17 +48,17 @@ function draw() {
   rotateY(frameCount * .01);
   //scale(circleX);
   normalMaterial(circleX);
-  torus(120, 30, 50, 40);
+  torus(280, 17, 50, 40);
   pop();
 
   push();
   rectMode(CENTER);
   // rotateZ *3;
   // rotateX * 2; 
-  rotateX(frameCount * .1);
-  rotateZ(frameCount * .1);
-  rotateY(frameCount * .1);
-  scale(0.4);
+  rotateX(frameCount * .05);
+  //rotateZ(frameCount * .05);
+  rotateY(frameCount * .05);
+  scale(2.5);
   normalMaterial();
   model(torso);
   pop();
@@ -68,4 +68,4 @@ function draw() {
    circleY = circleX + random(5,80);
    circleZ = random(5,10);
 
-	}
+  }
