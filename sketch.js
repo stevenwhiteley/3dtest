@@ -9,7 +9,7 @@ var frames = 10;
 function preload() {
 torso = loadModel('assets/venus.obj', true);
 
-// }
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
