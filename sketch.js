@@ -1,15 +1,15 @@
 let torso;
-let song;
+//let song;
 
 var circleX;
 var circleY;
 var circleZ;
-var frames = 100;
+var frames = 10;
 
 function preload() {
 torso = loadModel('assets/venus.obj', true);
 
-}
+// }
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
@@ -43,11 +43,12 @@ function draw() {
   rectMode(CENTER);
   // rotateZ *3;
   // rotateX * 2; 
-  rotateX(frameCount * .1);
-  rotateZ(frameCount * .1);
-  rotateY(frameCount * .1);
+  rotateX(frameCount * .01);
+  rotateZ(30, 22);
+  rotateY(frameCount * .01);
+  //scale(circleX);
   normalMaterial(circleX);
-  torus(120, circleZ, 50, 40);
+  torus(120, 30, 50, 40);
   pop();
 
   push();
@@ -63,8 +64,8 @@ function draw() {
   pop();
 
 
-   circleX = circleZ / random(5,40);
+   circleX = circleZ / random(5,10);
    circleY = circleX + random(5,80);
-   circleZ = random(5,80);
+   circleZ = random(5,10);
 
-	}
+	}}
