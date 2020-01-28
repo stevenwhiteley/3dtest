@@ -58,7 +58,7 @@ function draw() {
   rotateX(frameCount * .05);
   //rotateZ(frameCount * .05);
   rotateY(frameCount * .05);
-  scale(2.5);
+  scale(2);
   normalMaterial();
   model(torso);
   pop();
